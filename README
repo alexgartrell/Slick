@@ -1,5 +1,10 @@
-This is a dump of the actual slick git repo (.git files removed)
+This is the source code for my senior thesis.  It's a half-assed
+implementation which allows you to interpose on kernel networking stuff, so
+that you can essentially build something libevent-like within the kernel.
 
-At present, if you'd like the most up to date version, contact agartrelL@cmu.edu
+This code is
+1) Untested
+2) Unsupported
+3) Unhelpful
 
-This will be updated periodically
+So buyer beware :)
