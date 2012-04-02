@@ -1,0 +1,18 @@
+Install info:
+
+Requirements:
+sudo apt-get install g++ libboost-thread1.40-dev flex bison ruby-dev libgtest-dev python-dev libevent-dev
+
+Install thrift:
+
+tar zxf thrift-0.4.0.tar.gz
+cd thrift-0.4.0/
+# apply stop-tthreaded.patch, included here.
+patch -p1 < stop-tthreaded.patch
+./configure
+make
+sudo make install
+# Ensure /usr/local/lib is added to load path, which is where thrift is installed
+sudo ldconfig
+
+Make should work in this dir then.
